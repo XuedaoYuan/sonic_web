@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>test Audio</title>
+	</head>
+	<body>
+		<h1>ok</h1>
+		<script>
+			try {
+				var audioContext = new window.AudioContext() || new webkitAudioContext();
+			} catch (error) {
+				document.querySelector('h1').innerHTML = '不支持';
+				alert(error.toString());
+			}
+		</script>
+	</body>
+</html>
